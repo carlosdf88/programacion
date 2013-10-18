@@ -16,9 +16,11 @@ public class ejercicio5 {
 		System.out.println ("Introduce que velocidad tiene tu conexion en Mbps: ");
 		velocidad= teclado.nextDouble();
 
+		peso=peso*1024*1014*8;
+		velocidad=velocidad*1000000;
+		seg=(peso/velocidad);
 		
-		seg=(peso*1.048576)/velocidad;
-				
+		
 		System.out.println("El archivo de: "+peso+" Mb tardará: "+seg+" segundos en enviarse.");
 		
 		
