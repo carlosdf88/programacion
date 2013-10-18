@@ -17,7 +17,7 @@ public class ejercicio5 {
 		velocidad= teclado.nextDouble();
 
 		
-		seg=(peso/velocidad);
+		seg=(peso*1.048576)/velocidad;
 				
 		System.out.println("El archivo de: "+peso+" Mb tardará: "+seg+" segundos en enviarse.");
 		
