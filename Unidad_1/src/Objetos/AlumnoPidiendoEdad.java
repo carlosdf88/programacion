@@ -33,7 +33,7 @@ public class AlumnoPidiendoEdad {
 		}
 
 		
-		System.out.println("Listado de alumnos\n"+total);
+		System.out.println("\nListado de alumnos"+total);
 		
 
 	}
