@@ -9,7 +9,7 @@ import graphics.Text;
 
 public class Diagrama_barras {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 	
 		Canvas lienzo;
 		lienzo= Canvas.getInstance();
@@ -81,80 +81,95 @@ public class Diagrama_barras {
 				m6.draw();
 			
 		
-			//Aki se crean las barritas del diagrama.
+	
+				//Cuadradito explicando que datos se estan trabajando
+			
+				t10=new Text(80,60,"Crecimiento mensual en las ventas minoristas.");
+				t10.draw();
+				
+				b13=new Rectangle(55,60,15,15);
+				b13.draw();
+					b13.setColor(Color.BLUE);	
+					b13.fill();	
 				
 				
+				//Aki se crean las barritas del diagrama.
+				
+				Thread.sleep(100);
 				b1=new Rectangle(110,115,50,165);
 				b1.draw();
 					b1.setColor(Color.BLUE);	
 					b1.fill();	
-			
+				
+				Thread.sleep(100);
 				b2=new Rectangle(175,190,50,90);
 				b2.draw();
 					b2.setColor(Color.BLUE);	
 					b2.fill();	
-			
+				Thread.sleep(100);
 				b3=new Rectangle(240,220,50,60);
 				b3.draw();
 					b3.setColor(Color.BLUE);	
 					b3.fill();	
 			
-			
+				Thread.sleep(100);
 				b4=new Rectangle(305,205,50,75);
 				b4.draw();
 					b4.setColor(Color.BLUE);	
 					b4.fill();	
-						
+				
+				Thread.sleep(100);		
 				b5=new Rectangle(370,265,50,15);
 				b5.draw();
 					b5.setColor(Color.BLUE);	
 					b5.fill();	
 			
+				Thread.sleep(100);	
 				b6=new Rectangle(435,115,50,165);
 				b6.draw();
 					b6.setColor(Color.BLUE);	
 					b6.fill();	
-		
+				
+				Thread.sleep(100);
 				b7=new Rectangle(500,280,50,45);
 				b7.draw();
 					b7.setColor(Color.BLUE);	
 					b7.fill();	
-					
+				
+				Thread.sleep(100);			
 				b8=new Rectangle(565,250,50,30);
 				b8.draw();
 					b8.setColor(Color.BLUE);	
 					b8.fill();	
+				
+				Thread.sleep(100);	
 				b9=new Rectangle(630,205,50,75);
 				b9.draw();
 					b9.setColor(Color.BLUE);	
 					b9.fill();	
-								
+				
+				Thread.sleep(100);	
 				b10=new Rectangle(695,175,50,105);
 				b10.draw();
 					b10.setColor(Color.BLUE);	
 					b10.fill();	
-								
+				
+				Thread.sleep(100);
 				b11=new Rectangle(760,220,50,60);
 				b11.draw();
 					b11.setColor(Color.BLUE);	
 					b11.fill();	
-										
+				
+				Thread.sleep(100);	
 				b12=new Rectangle(825,250,50,30);
 				b12.draw();
 					b12.setColor(Color.BLUE);	
 					b12.fill();	
 											
 											
-				//Cuadradito explicando que datos se estan trabajando
+			
 					
-					t10=new Text(80,60,"Crecimiento mensual en las ventas minoristas.");
-					t10.draw();
-					
-					b13=new Rectangle(55,60,15,15);
-					b13.draw();
-						b13.setColor(Color.BLUE);	
-						b13.fill();	
-					
+				
 									
 	}
 
