@@ -17,7 +17,7 @@ public class coche {
 		Canvas lienzo;
 		lienzo= Canvas.getInstance();
 		
-		Rectangle r1,r2;
+		Rectangle r1,r2,ventana1,ventana2;
 		Ellipse rueda1,rueda2;
 		Line suelo,antena;
 		int x=0;
@@ -30,15 +30,26 @@ public class coche {
 		r2=new Rectangle(200,100,200,70);
 		r2.draw();
 		
+		//creo las ventanillas
+		
+		
+		ventana1=new Rectangle(310,110,80,40);
+		ventana1.draw();
+		
+		ventana2=new Rectangle(210,110,80,40);
+		ventana2.draw();
+		
+		
+		
 		//creo ruedas
 		
-		rueda1=new Ellipse(365,175,60,60);
+		rueda1=new Ellipse(365,175,75,60);
 		rueda1.draw();
 		
-		rueda2=new Ellipse(165,175,60,60);
+		rueda2=new Ellipse(165,175,70,60);
 		rueda2.draw();
 		
-		//Coloreo tanto los rectangulos como las rudas
+		//Coloreo los rectangulos y las rudas
 		
 		r1.setColor(Color.RED);	
 		r1.fill();	
@@ -52,6 +63,11 @@ public class coche {
 		rueda2.setColor(Color.BLACK);	
 		rueda2.fill();	
 
+		ventana1.setColor(Color.WHITE);	
+		ventana1.fill();
+		
+		ventana2.setColor(Color.WHITE);	
+		ventana2.fill();
 		//creo el suelo
 		
 		suelo=new Line(10,235,1000,235);
@@ -69,37 +85,41 @@ public class coche {
 		//Movimiento.
 		x=0;
 		
-		
-	while (10==10){	
-		
-		while (x!=70){
-		
-			Thread.sleep(10);
-		
-			r1.translate(5,0);
-			r2.translate(5,0);
-			rueda1.translate(5,0);
-			rueda2.translate(5,0);
-			antena.translate(5,0);
-			x++;
-				
-		}
-	
-		while (x!=0){
+		while (10==10){	
 			
-			Thread.sleep(10);
+			while (x!=70){
+			
+				Thread.sleep(10);
+			
+				r1.translate(5,0);
+				r2.translate(5,0);
+				rueda1.translate(5,0);
+				rueda2.translate(5,0);
+				antena.translate(5,0);
+				ventana1.translate(5, 0);
+				ventana2.translate(5, 0);
+				x++;
+					
+			}
 		
-			r1.translate(-5,0);
-			r2.translate(-5,0);
-			rueda1.translate(-5,0);
-			rueda2.translate(-5,0);
-			antena.translate(-5,0);
-			x--;
+			while (x!=0){
 				
+				Thread.sleep(10);
+			
+				r1.translate(-5,0);
+				r2.translate(-5,0);
+				rueda1.translate(-5,0);
+				rueda2.translate(-5,0);
+				antena.translate(-5,0);
+				ventana1.translate(-5, 0);
+				ventana2.translate(-5, 0);
+				x--;
+					
+			}
+			
 		}
 		
-	}
-		
+	
 		
 	
 	
