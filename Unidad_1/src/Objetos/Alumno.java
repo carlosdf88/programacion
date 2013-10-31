@@ -8,13 +8,11 @@ public class Alumno {
 		
 		
 		Scanner input=new Scanner (System.in);
-		int contador=0,x=0,edad=0;
+		int x=0,edad=0;
 		String nombre="",total="";
 		
-		System.out.println("¿Cuantos alumnos vas a introducir? ");
-		contador=input.nextInt();		
 				
-		while (x<contador){
+		while (x<3){
 			
 				if (x==0){
 					System.out.println("Introduce la edad de los alumnos: ");

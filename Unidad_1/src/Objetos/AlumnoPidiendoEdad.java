@@ -7,13 +7,12 @@ public class AlumnoPidiendoEdad {
 	public static void main(String[] args) {
 		
 		Scanner input=new Scanner (System.in);
-		int contador=3,x=0,edad=0,totaledad=0;
+		int x=0,edad=0,totaledad=0;
 		String nombre="",total="";
 		
-		//System.out.println("¿Cuantos alumnos vas a introducir? ");
-		//contador=input.nextInt();		
+		
 				
-		while (x<contador){
+		while (x<3){
 			
 					
 				System.out.print("Introduce el nombre del alumno:");
@@ -40,12 +39,7 @@ public class AlumnoPidiendoEdad {
 		System.out.println("\nListado de alumnos"+total);
 		System.out.println("\nLa media de edad de los alumnos es de "+(totaledad/contador)+" años.");
 
-	}
-
-		
-		
-		
-		
+	}		
 		
 
 	}
