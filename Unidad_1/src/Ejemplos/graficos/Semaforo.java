@@ -98,6 +98,10 @@ public class Semaforo {
 		rojo.fill();
 	
 	
+		
+		
+		
+		
 	}
 
 }

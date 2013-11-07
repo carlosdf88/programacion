@@ -1,6 +1,8 @@
 package Ejemplos.graficos;
 
 
+import java.util.Scanner;
+
 import graphics.Canvas;
 import graphics.Rectangle;
 import graphics.Color;
@@ -13,7 +15,52 @@ public class coche {
 
 	public static void main(String[] args) throws InterruptedException {
 	
+		Scanner input=new Scanner (System.in);
+		String respuesta="0";
+		int respuesta1=0;
+		
+		System.out.print("¿De que color quieres que sea el buga?");
+		
+	
+		
+		
+		while ((respuesta1!=1)&&(respuesta1!=2)&&(respuesta1!=3)&&(respuesta1!=4)&&(respuesta1!=5)){
+			
+					
+
+			System.out.print("\n\n1.- Rojo.\n2.- Amarillo.\n3.- Verde.\n4.- Azul.\n5.- Naranja.\n\nRespuesta: ");
+			respuesta=input.next();
+			
+			
+			if (respuesta.compareTo(1)){ respuesta1=Integer.parseInt(respuesta); }
+			if (respuesta=="2"){ respuesta1=Integer.parseInt(respuesta); }
+			if (respuesta=="3"){ respuesta1=Integer.parseInt(respuesta); }
+			if (respuesta=="4"){ respuesta1=Integer.parseInt(respuesta); }
+			if (respuesta=="5"){ respuesta1=Integer.parseInt(respuesta); }
+			
+			
+	
+			System.out.print("\nTe as confundido, introduce una respuesta correcta");
+				
+				
+			
+				
+					
+					
+					
+				
+			
+	
+			System.out.print("\nrespuesta: "+respuesta+"\nrespuesta1: "+respuesta1);
+		
+		}
+						
+		
+
+		
+		
 		//Creacion de variables.
+		
 		Canvas lienzo;
 		lienzo= Canvas.getInstance();
 		
@@ -49,13 +96,63 @@ public class coche {
 		rueda2=new Ellipse(165,175,70,60);
 		rueda2.draw();
 		
-		//Coloreo los rectangulos y las rudas
+		//Coloreo los rectangulos
 		
-		r1.setColor(Color.RED);	
-		r1.fill();	
+
+
+	
+	
+	switch (respuesta1){
 		
-		r2.setColor(Color.RED);	
-		r2.fill();	
+		case 1:
+			
+			r1.setColor(Color.RED);	
+			r1.fill();	
+		
+			r2.setColor(Color.RED);	
+			r2.fill();	
+			break;
+			
+		case 2: 
+			
+			r1.setColor(Color.YELLOW);	
+			r1.fill();	
+			
+			r2.setColor(Color.YELLOW);	
+			r2.fill();	
+			break;
+			
+		case 3:
+		
+			r1.setColor(Color.GREEN);	
+			r1.fill();	
+			
+			r2.setColor(Color.GREEN);	
+			r2.fill();	
+				
+			break;
+			
+		case 4:
+			
+			r1.setColor(Color.BLUE);	
+			r1.fill();	
+			
+			r2.setColor(Color.BLUE);	
+			r2.fill();	
+			break;
+			
+		case 5:
+			
+			r1.setColor(Color.ORANGE);	
+			r1.fill();	
+			
+			r2.setColor(Color.ORANGE);	
+			r2.fill();	
+			break;
+		}
+		
+		
+		//Coloreo lo demas
 		
 		rueda1.setColor(Color.BLACK);	
 		rueda1.fill();	
