@@ -15,7 +15,7 @@ public class Calculadora {
 		System.out.print("Escribe el primer numero: ");
 		num2=teclado.nextInt();
 			
-		System.out.print("\n¿Que desea hacer?\n\n1.- Sumar.\n2.- Restar.\n3.- Multiplicar.\n4.- Dividir.\n\nRespuesta: ");
+		System.out.print("\n¿Que desea hacer con los numeros "+num1+" y "+num2+"?\n\n1.- Sumar.\n2.- Restar.\n3.- Multiplicar.\n4.- Dividir.\n\nRespuesta: ");
 		respuesta=teclado.nextInt();
 		
 		switch (respuesta){

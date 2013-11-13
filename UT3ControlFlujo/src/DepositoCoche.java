@@ -20,16 +20,18 @@ public class DepositoCoche {
 			
 		//Total del deposito con la cantidad de litros que tiene en el deposito.
 
-		totaldeposito=(tamaño*lleno)/100;
-		autonomia=totaldeposito/consumo;
+		totaldeposito=(tamaño*lleno);
+		autonomia=(totaldeposito/consumo);
 		
 		
+		if (((tamaño<=0)||(consumo>=0))&&(lleno<0)){
+			System.out.print("Te has confundido al meter los datos. Intentelo de nuevo.");
 		
-		if (autonomia<=30){
+		}else if (autonomia<=30){
 			
 			System.out.print("Tiene una autonomia de: "+autonomia+"km. Tienes que repostar.");	
 		}else {
-			
+					
 			System.out.print("Tiene una autonomia de: "+autonomia+"km. No te preocupes.");
 			
 		}
