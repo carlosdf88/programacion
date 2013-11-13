@@ -41,7 +41,7 @@ public class Calculadora {
 			break;
 			
 		default:
-			System.out.print("Eres tonto");
+			System.out.print("Te has confundido");
 			break;
 			
 		}
