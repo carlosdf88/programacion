@@ -28,15 +28,17 @@ public static void main(String[] args) {
 				System.out.print("Escribe un numero: ");
 				num=teclado.nextInt();
 				
-				if ((num==0)||(num<0)){
-					System.out.print("\nTe has confundido, introduce un numero valido.");
-					System.out.print("\n");
-				}
+					if ((num==0)||(num<0)){
+						System.out.print("\nTe has confundido, introduce un numero valido.");
+						System.out.print("\n");
+					}
 			
 					System.out.print("\n");
 				
-				}
+				}//cierro while
 			
+				
+				
 				for (int i=num; i>=1; i--){
 				total=total*i;
 				}
