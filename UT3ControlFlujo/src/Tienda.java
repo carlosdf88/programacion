@@ -32,12 +32,7 @@ public class Tienda {
 			System.out.println(gasto+"€ - "+total+"€.");
 			System.out.println("Total a pagar "+(gasto-total)+"€");
 		}
-		
-		
-		
-		
-		
-		
+			
 		
 	}
 
