@@ -50,7 +50,7 @@ public static void main(String[] args) {
 			System.out.print("¿Quires introducir otro numero? si/no: ");
 			resultado=teclado.next();
 		
-			if (resultado.equalsIgnoreCase("Si")==false){
+			if (resultado.equalsIgnoreCase("No")==true){
 				System.out.print("\n\nFIN");
 				break;
 			}
