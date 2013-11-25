@@ -96,8 +96,9 @@ while(true){
 		}	
 			
 			
-		System.out.println("\n\n¿Otra partida? si/no: ");	
+		System.out.print("\n\n¿Otra partida? si/no: ");	
 		
+	
 		if (teclado.next().equalsIgnoreCase("NO")){
 			System.out.println("\n\nFIN");
 			break;
