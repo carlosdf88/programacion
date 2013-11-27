@@ -19,6 +19,9 @@ public class PelotaRebota {
 
 		rectangulo = new Rectangle(10, 10, 690, 690);
 		rectangulo.draw();
+		
+		rectangulo.setColor(Color.BLACK);
+		rectangulo.fill();
 
 		pelota = new Ellipse(p1, p2, p3, p4);
 		pelota.draw();
@@ -28,7 +31,9 @@ public class PelotaRebota {
 
 		t1 = new Text(105, 345, "★");
 		t1.draw();
-
+		t1.grow(20, 20);  //amplia el texto
+		t1.setColor(Color.RED);
+		
 		// Movimiento.
 		while (true) {
 			while (x < 245) {
@@ -41,21 +46,21 @@ public class PelotaRebota {
 			while (x > 0) {
 				Thread.sleep(3);
 				pelota.translate(1, 1);
-				t1.translate(1, 1);
+				t1.translate(1, 1);				
 				x--;
 			}
 
 			while (x < 245) {
 				Thread.sleep(3);
 				pelota.translate(-1, 1);
-				t1.translate(-1, 1);
+				t1.translate(-1, 1);				
 				x++;
 			}
 
 			while (x > 0) {
 				Thread.sleep(3);
 				pelota.translate(-1, -1);
-				t1.translate(-1, -1);
+				t1.translate(-1, -1);			
 				x--;
 	}
 		}
