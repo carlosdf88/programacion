@@ -11,7 +11,8 @@ public class ejercicio1 {
 		String numero = "";
 		int contador = 0;
 
-		System.out.print("Comprueba si un numero es capicua.\n\nIntroduce el numero completo y presiona intro: ");
+		System.out
+				.print("Comprueba si un numero es capicua.\n\nIntroduce el numero completo y presiona intro: ");
 		numero = teclado.next();
 
 		for (int i = 0; i < numero.length() / 2; i++) {

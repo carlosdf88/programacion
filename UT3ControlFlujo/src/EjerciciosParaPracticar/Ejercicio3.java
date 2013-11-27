@@ -45,7 +45,8 @@ public class Ejercicio3 {
 			System.out.print("\nIntroduce el nombre del trabajador: ");
 			nombres[i] = input.next();
 
-			System.out.print("Introduce el sueldo en € de " + nombres[i] + ": ");
+			System.out
+					.print("Introduce el sueldo en € de " + nombres[i] + ": ");
 			sueldos[i] = input.nextInt();
 
 			System.out.print("\n¿Desea introducir otro trabajador? si/no: ");
