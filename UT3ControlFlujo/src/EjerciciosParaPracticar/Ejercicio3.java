@@ -45,10 +45,10 @@ public class Ejercicio3 {
 			System.out.print("\nIntroduce el nombre del trabajador: ");
 			nombres[i] = input.next();
 
-			System.out.print("Introduce el sueldo de " + nombres[i] + ": ");
+			System.out.print("Introduce el sueldo en € de " + nombres[i] + ": ");
 			sueldos[i] = input.nextInt();
 
-			System.out.print("\n¿Desea introducir otro trabajador? si/no ");
+			System.out.print("\n¿Desea introducir otro trabajador? si/no: ");
 
 			if (input.next().equalsIgnoreCase("no")) {
 				break;
@@ -63,13 +63,14 @@ public class Ejercicio3 {
 
 		media = media / sueldos.length;
 
-		System.out.print("\nLa media del sueldo es: " + media + ".\n\n");
-		System.out.print("Nombres.\tSueldo.\n");
+		System.out.print("\nLa media del sueldo es: " + media + "€.\n\n");
+		System.out
+				.print("Los trabajadores que cobran por encima de la media son:\nNombres.\tSueldo.\n\n");
 
 		for (int x = 0; x < sueldos.length; x++) {
 
 			if (sueldos[x] > media) {
-				System.out.print(nombres[x] + "\t\t" + sueldos[x] + "\n");
+				System.out.print(nombres[x] + "\t\t" + sueldos[x] + "€\n");
 
 			}
 		}
