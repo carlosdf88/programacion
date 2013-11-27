@@ -57,7 +57,7 @@ public class PelotaRebota {
 				pelota.translate(-1, -1);
 				t1.translate(-1, -1);
 				x--;
-			}
+	}
 		}
 	}
 }
