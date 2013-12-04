@@ -27,7 +27,13 @@ public class Ejercicio1 {
 
 		}
 
-		System.out.print("Positivos: "+positivos+"\nNegativos: "+negativos+"\nMedia: "+(media/numeros.length));
+		for (int i = 0; i < numeros.length; i++) {
+			
+			System.out.print(numeros[i]+"\t");
+		}
+		
+		
+		System.out.print("\nPositivos: "+positivos+"\nNegativos: "+negativos+"\nMedia: "+(media/numeros.length));
 		
 		
 	}
